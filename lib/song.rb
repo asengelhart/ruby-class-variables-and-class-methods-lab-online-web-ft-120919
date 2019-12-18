@@ -26,7 +26,7 @@ class Song
     @@artists.uniq
   end 
   
-  def array_count(array_arg)
+  def self.array_count(array_arg)
     array_arg.reduce({}) do |memo, array_val|
       if memo[array_val] == nil 
         memo[array_val] = 0 
