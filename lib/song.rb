@@ -1,3 +1,5 @@
+require 'pry'
+
 class Song 
   attr_accessor :name, :artist, :genre
   
@@ -34,6 +36,7 @@ class Song
     end 
   end 
   def self.genre_count
+    binding.pry 
     array_count(@@genres)
   end 
   def self.artist_count
